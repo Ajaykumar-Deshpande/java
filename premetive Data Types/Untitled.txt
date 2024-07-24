@@ -1,0 +1,16 @@
+
+int noofstudents=20;
+int=noofdaysinweek=7;
+
+
+Boolean same= noOfstudents==noOfdaysinweaks;
+system.out.println("same :"+same);
+
+char tShirtSize='m';
+char ShirtSize='m';
+
+Boolean sameshirt=tshirtsize==noofstudents;
+system.out.println("sameshirt :"+sameshirt);
+
+
+

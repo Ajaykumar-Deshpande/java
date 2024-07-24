@@ -1,0 +1,16 @@
+class traficlight{
+public static void main("STRING[] VALUE){
+
+System.out.println(start main in traficlight");
+
+if (value.length==3)
+{
+string location=valye[0]
+System.out.println("location :"+location);
+}
+else
+{
+
+System.out.println("not specified");
+}
+}

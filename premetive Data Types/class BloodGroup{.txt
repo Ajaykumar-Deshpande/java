@@ -1,0 +1,10 @@
+class BloodGroup{
+public static void main(String[] args)
+{
+String password="ajay";
+System.ot.println(password);
+string combined=password + "for gmail;
+System.ot.println(combined);
+
+}
+}
