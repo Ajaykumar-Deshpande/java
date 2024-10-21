@@ -25,13 +25,13 @@ public class Railway extends HttpServlet {
 		printWriter.println("<body>");
 		printWriter.println("<h2> Name  : " + arg0.getParameter("names") + "</h3>");
 		printWriter.println("<h4> Source  : " + arg0.getParameter("source") + "</h4>");
-		printWriter.println("<h4> Destination  : " + arg0.getParameter("Destination") + "</h4>");
+		printWriter.println("<h4> Destination  : " + arg0.getParameter("destination") + "</h4>");
 		printWriter.println("<h4> Start date  : " + arg0.getParameter("startdate") + "</h4>");
 		printWriter.println("<h4> Return date  : " + arg0.getParameter("returndate") + "</h4>");
-		printWriter.println("<h4> Seat Type  : " + arg0.getParameter("type") + "</h4>");
-		printWriter.println("<h4> Total Ticket : " + arg0.getParameter("ticket") + "</h4>");
-		printWriter.println("<h4> No Of Male  : " + arg0.getParameter("male") + "</h4>");
-		printWriter.println("<h4> No Of Female  : " + arg0.getParameter("female") + "</h4>");
+		printWriter.println("<h4> Seat Type  : " + arg0.getParameter("noOfSeatType") + "</h4>");
+		printWriter.println("<h4> Total Ticket : " + arg0.getParameter("noOfTicket") + "</h4>");
+		printWriter.println("<h4> No Of Male  : " + arg0.getParameter("noOfMale") + "</h4>");
+		printWriter.println("<h4> No Of Female  : " + arg0.getParameter("noOfeMale") + "</h4>");
 		printWriter.println("</body>");
 		printWriter.println("</html>");
 	}
