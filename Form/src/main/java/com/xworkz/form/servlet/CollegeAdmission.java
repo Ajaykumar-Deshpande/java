@@ -10,12 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.xworkz.form.dto.CollegeAdmissionDTO;
+import com.xworkz.form.service.CollageAdmissionImpl;
+import com.xworkz.form.service.CollageAdmissionService;
 
 @WebServlet(loadOnStartup = 1, urlPatterns = "/college")
 public class CollegeAdmission extends HttpServlet {
 
 	public CollegeAdmission() {
-		System.out.println("created CollegeAdmission const ");
+		System.out.println("created CollegeAdmission const");
 	}
 
 	@Override
@@ -34,6 +36,8 @@ public class CollegeAdmission extends HttpServlet {
 		Integer convertedAge = Integer.valueOf(age);
 		CollegeAdmissionDTO ref = new CollegeAdmissionDTO(name, email, convertedMobile, address, fatherName, motherName,
 				convertedPercentage, course, convertedAge);
+		CollageAdmissionService admissionService = new CollageAdmissionImpl();
+		admissionService.validateAndSave(ref);
 
 		arg1.setContentType("text/html");
 
@@ -48,4 +52,5 @@ public class CollegeAdmission extends HttpServlet {
 		printWriter.println("</html>");
 
 	}
+
 }
